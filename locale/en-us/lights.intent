@@ -1,7 +1,7 @@
 (toggle | switch | get | ) (the | ) (lights | light)
 
-(switch | turn ) {state} the (lights|light)
-(switch | turn ) the (lights|light) {state}
+(switch | turn ) {state} (the|) (lights|light)
+(switch | turn ) (the|) (lights|light) {state}
 
 (switch | turn ) ({state}|) light {num}
 (switch | turn ) light {num} ({state}|)

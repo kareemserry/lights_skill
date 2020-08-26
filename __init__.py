@@ -5,6 +5,11 @@ class Lights(MycroftSkill):
 	def __init__(self):
 		MycroftSkill.__init__(self)
 
+
+	def initialize(self):
+		self.register_entity_file('state.entity')
+		self.register_entity_file('num.entity')
+
 	@intent_handler('lights.intent')
 	def handle_lights(self, message):
 		state = message.data.get('state')
