@@ -47,9 +47,9 @@ def create_skill():
 	return Lights()
 
 def light_request(state, light):
-	r = requests.post('http://localhost/lights?light={}&state={}'.format(light, state))
+	r = requests.post('http://localhost/lights?light={}&state={}&agent=mycroft'.format(light, state))
 	return r
 
 def toggle_request(light):
-	r = requests.post('http://localhost/lights/toggle?light={}'.format(light))
+	r = requests.post('http://localhost/lights/toggle?light={}&agent=mycroft'.format(light))
 	return r
